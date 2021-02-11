@@ -15,4 +15,4 @@ Maintainer: Sean J. Wang, sjw2@andrew.cmu.edu
 Dataset is generated using a PyBullet simulated wheeled robot. Two different systems are provided. The first has a novice and expert robot that are more similar to each other.
 
 ## Running SIDM Domain Transfer Learning
-After the dataset is generated, SIDM training can be run using "sidmTraining.py"
+After the dataset is generated, execute "sidmTraining.py" to run the SIDM training procedure. "sidmNetworks.py" contains all networks needed for SIDM as well as "sidmLosses" class used to calculate all training losses.
