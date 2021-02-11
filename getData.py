@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # parameters for parallel processing
     numParallelSims = 12
     trajectoryLength = 64
-    numTrajectoriesPerSim = 10#np.ceil(500000/numParallelSims/trajectoryLength)
+    numTrajectoriesPerSim = np.ceil(500000/numParallelSims/trajectoryLength)
     # parameters consistent between systems
     simParams = {"timeStep":1./500.,
                 "stepsPerControlLoop":50,
