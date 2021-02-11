@@ -3,9 +3,9 @@ Maintainer: Sean J. Wang, sjw2@andrew.cmu.edu
 
 ## Required Dependencies
 [NumPy](numpy.org)
-- Numpy is used for storage of parameters and small math operations
+- Numpy is used for storage of parameters and small math operations\\
 [PyTorch](pytorch.org)
-- PyTorch is used for network training
+- PyTorch is used for network training\\
 [wheeledRobotSimPybullet](github.com/robomechanics/wheeledRobotSimPybullet)
 - wheeledRobotSimPybullet is the simulation used to gather data. This package also contains the dataset class used for the replay buffer. It also contains state transformations used during training.
 
