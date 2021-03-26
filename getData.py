@@ -1,11 +1,6 @@
 import numpy as np
 import os
-# set path to simulation file (https://github.com/robomechanics/wheeledRobotSimPybullet)
-simPath = '../wheeledRobotSimPybullet'
-import sys
-sys.path.append(simPath)
-from parallelSimDataset import gatherData
-
+from wheeledSim.parallelSimDataset import gatherData
 
 if __name__ == '__main__':
     runSystem1 = True
@@ -28,7 +23,7 @@ if __name__ == '__main__':
                     "widthScale":0.1, # each pixel corresponds to this distance
                     "heightScale":0.1}
     senseParams = {"senseDim":[5,5], # width (meter or angle) and height (meter or angle) of terrain map or point cloud
-                    "senseResolution":[300,300], # array giving resolution of map output (num pixels wide x num pixels high)
+                    "senseResolution":[64,64], # array giving resolution of map output (num pixels wide x num pixels high)
                     "senseType":-1, # 0 for terrainMap, 1 for lidar depth image, 2 for lidar point cloud
                     "sensorPose":[[0,0,0],[0,0,0,1]]} # pose of sensor relative to body
     dataRootDir = 'data/'
